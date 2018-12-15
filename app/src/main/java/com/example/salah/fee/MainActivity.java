@@ -72,7 +72,9 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
         else if (id == R.id.checkbox) {
-            item.setChecked(true);
+            if (item.isChecked()==false){
+            item.setChecked(true);}
+            else {item.setChecked(false);}
             return true;
         }
 
